@@ -1,51 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const query = urlParams.get('query');
+// search.js
 
-  if (query) {
-      // Realiza la búsqueda en el contenido del sitio
-      performSearch(query);
+// Función para realizar la búsqueda en el contenido de la página
+function realizarBusqueda() {
+  // Obtener el término de búsqueda ingresado por el usuario
+  const terminoBusqueda = document.getElementById('campoBusqueda').value.toLowerCase();
+
+  // Obtener todos los elementos de contenido en la página
+  const elementos = document.querySelectorAll('.contenido');
+
+  // Recorrer cada elemento y verificar si contiene el término de búsqueda
+  elementos.forEach(elemento => {
+      const textoElemento = elemento.textContent.toLowerCase();
+      if (textoElemento.includes(terminoBusqueda)) {
+          // Mostrar el elemento si contiene el término de búsqueda
+          elemento.style.display = 'block';
+      } else {
+          // Ocultar el elemento si no contiene el término de búsqueda
+          elemento.style.display = 'none';
+      }
+  });
+}
+
+// Agregar un evento al campo de búsqueda para realizar la búsqueda al presionar Enter
+document.getElementById('campoBusqueda').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+      realizarBusqueda();
   }
 });
-
-function performSearch(query) {
-  const resultsContainer = document.getElementById('results-container');
-  const lowerCaseQuery = query.toLowerCase();
-  let resultsHTML = '';
-
-  // Ejemplo de contenido a buscar
-  const siteContent = [
-      {
-          title: 'Arriendo de apartamento',
-          description: '2 habitaciones, 1 baño, sala-comedor.',
-          link: 'index.html#ofertas'
-      },
-      {
-          title: 'Venta de propiedad',
-          description: '3 habitaciones, 2 baños, jardín privado.',
-          link: 'index.html#ofertas'
-      },
-      {
-          title: 'Renovación de áreas comunes',
-          description: 'Se están realizando mejoras en los espacios comunes para ofrecer mayor comodidad...',
-          link: 'index.html#noticias'
-      },
-      {
-          title: 'Oferta especial en arriendos',
-          description: 'Disfruta de un 10% de descuento en los arriendos durante los próximos 3 meses...',
-          link: 'index.html#noticias'
-      }
-  ];
-
-  // Filtra el contenido según la consulta de búsqueda
-  const filteredContent = siteContent.filter(item =>
-      item.title.toLowerCase().includes(lowerCaseQuery) ||
-      item.description.toLowerCase().includes(lowerCaseQuery)
-  );
-
-  if (filteredContent.length > 0) {
-      filteredContent.forEach(item => {
-          resultsHTML += `
-              <div class="search-result">
-                  <h3><a href="${item.link}">${item.title}</a></h3>
-                  <
