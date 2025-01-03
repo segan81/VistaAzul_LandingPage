@@ -1,0 +1,190 @@
+/* Resetear estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF; /* Blanco */
+  color: #333;
+}
+
+/* Encabezado */
+.header {
+  background-color: #43176C; /* Azul */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-img {
+  width: 50px; /* Ajusta el tamaño del logo */
+  height: auto;
+  margin-right: 10px;
+}
+
+.header .logo h1 {
+  font-size: 2.5em;
+}
+
+/* Barra de navegación */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Carrusel */
+.carousel {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.carousel-images img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Ofertas */
+.ofertas {
+  padding: 50px;
+  background-color: #f8f9fa;
+}
+
+.ofertas h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #43176C; /* Azul */
+}
+
+.ofertas-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.oferta {
+  background-color: #e9ecef;
+  padding: 20px;
+  width: 45%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.oferta h3 {
+  color: #43176C; /* Azul */
+  margin-bottom: 10px;
+}
+
+.oferta button {
+  background-color: #43176C; /* Azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.oferta button:hover {
+  background-color: #350f4f; /* Un tono más oscuro de azul */
+}
+
+/* Noticias */
+.noticias {
+  padding: 50px;
+}
+
+.noticias h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #43176C; /* Azul */
+}
+
+.noticias-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.noticia {
+  width: 45%;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.noticia h3 {
+  color: #43176C; /* Azul */
+}
+
+/* Formulario de contacto */
+.contacto {
+  padding: 50px;
+  background-color: #f8f9fa;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacto input, .contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contacto button {
+  background-color: #43176C; /* Azul */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background-color: #350f4f; /* Un tono más oscuro de azul */
+}
+
+/* Pie de página */
+footer {
+  background-color: #43176C; /* Azul */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conjunto Residencial Vista Azul</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Encabezado con el logo y el nombre de la copropiedad -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Conjunto Residencial Vista Azul" class="logo-img">
+            <h1>Conjunto Residencial Vista Azul</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section class="carousel">
+        <div class="carousel-images">
+            <img src="images/VA_Sector_A.jpg" alt="Vista del conjunto">
+            <img src="images/VA_Sector_B.png" alt="Propiedad en venta">
+        </div>
+    </section>
+
+    <!-- Sección de ofertas -->
+    <section id="ofertas" class="ofertas">
+        <h2>Ofertas de Arriendo y Venta</h2>
+        <div class="ofertas-list">
+            <div class="oferta">
+                <h3>Arriendo de apartamento</h3>
+                <p>2 habitaciones, 1 baño, sala-comedor.</p>
+                <button>Ver detalles</button>
+            </div>
+            <div class="oferta">
+                <h3>Venta de propiedad</h3>
+                <p>3 habitaciones, 2 baños, jardín privado.</p>
+                <button>Ver detalles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de noticias -->
+    <section id="noticias" class="noticias">
+        <h2>Últimas Noticias</h2>
+        <div class="noticias-list">
+            <article class="noticia">
+                <h3>Renovación de áreas comunes</h3>
+                <p>Se están realizando mejoras en los espacios comunes para ofrecer mayor comodidad...</p>
+            </article>
+            <article class="noticia">
+                <h3>Oferta especial en arriendos</h3>
+                <p>Disfruta de un 10% de descuento en los arriendos durante los próximos 3 meses...</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Conjunto Residencial Vista Azul. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
