@@ -38,12 +38,23 @@ body {
   font-size: 2.5em;
 }
 
-/* Barra de navegación */
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #F8F9FA; /* Color de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 10px; /* Radio de las esquinas redondeadas */
+    border: 1px solid #43176C; /* Borde alrededor del menú */
+}
+
+
 .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar ul li {
@@ -51,7 +62,7 @@ body {
 }
 
 .navbar ul li a {
-  color: white;
+  color: #43176C; /* Color del texto */
   text-decoration: none;
   font-weight: bold;
 }
@@ -187,4 +198,30 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 1em;
+}
+
+.search-form button {
+  background-color: #43176C; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #350f4f; /* Un tono más oscuro de azul */
 }

@@ -1,0 +1,55 @@
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #F8F9FA; /* Color de fondo */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #43176C; /* Color del texto */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 1em;
+}
+
+.search-form button {
+  background-color: #43176C; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #350f4f; /* Un tono más oscuro de azul */
+}
