@@ -73,7 +73,10 @@ body {
 
 /* Carrusel */
 .carousel {
-  margin: 30px 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-left: 0px;
   text-align: center;
 }
 
